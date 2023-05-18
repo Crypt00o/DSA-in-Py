@@ -117,6 +117,9 @@ class Array:
         else:
             return False
 
+    def __eq__(self, other):
+        return self.__arr_value__ == other.__dict__.get('__arr_value__')
+
     def append(self, value):
 
         Array.__check_size__(self.__arr_size__, self.__arr_value__)
