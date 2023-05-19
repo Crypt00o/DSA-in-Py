@@ -172,6 +172,6 @@ class Array:
 
     def count(self, value):
 
-        Array.__check_value_type__(self.__arr_value__, value)
+        Array.__check_value_type__(self.__arr_type__, value)
 
         return self.__arr_value__.count(value)
